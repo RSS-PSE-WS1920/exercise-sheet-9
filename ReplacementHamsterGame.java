@@ -12,19 +12,30 @@ import java.io.IOException;
  */
 public class ReplacementHamsterGame extends SimpleHamsterGame {
 
-	public ReplacementHamsterGame() {
-		game.displayInNewGameWindow();
-		try {
-			game.initialize("/territories/rotate.ter");
+    public ReplacementHamsterGame() {
+        game.displayInNewGameWindow();
+        try {
+            game.initialize("/territories/rotate.ter");
 
-		} catch (IOException ex) {
-			throw new RuntimeException(ex);
-		}
-	}
+        } catch (IOException ex) {
+            throw new RuntimeException(ex);
+        }
+    }
 
-	public void rotate180() {
-	}
+    @Override
+    protected void run(){
+        // call your rotatin method here
+    }
 
-	public void rotate90() {
-	}
+    public void main(){
+        game.startGame(false);
+        doRun();
+        game.stopGame();
+    }
+
+    public void rotate180() {
+    }
+
+    public void rotate90() {
+    }
 }

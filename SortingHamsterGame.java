@@ -12,14 +12,24 @@ import java.io.IOException;
  */
 public class SortingHamsterGame extends SimpleHamsterGame {
 
-	public SortingHamsterGame() {
-		game.displayInNewGameWindow();
-		try {
-			game.initialize("/territories/sorting.ter");
+    public SortingHamsterGame() {
+        game.displayInNewGameWindow();
+        try {
+            game.initialize("/territories/sorting.ter");
 
-		} catch (IOException ex) {
-			throw new RuntimeException(ex);
-		}
-	}
+        } catch (IOException ex) {
+            throw new RuntimeException(ex);
+        }
+    }
 
+    @Override
+    protected void run(){
+        // call your sorting method here
+    }
+
+    public void main(){
+        game.startGame(false);
+        doRun();
+        game.stopGame();
+    }
 }
