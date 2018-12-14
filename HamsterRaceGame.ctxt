@@ -1,0 +1,15 @@
+#BlueJ class context
+comment0.target=HamsterRaceGame
+comment1.params=
+comment1.target=HamsterRaceGame()
+comment2.params=
+comment2.target=void\ run()
+comment3.params=
+comment3.target=void\ main()
+comment4.params=
+comment4.target=void\ initRace()
+comment4.text=\n\ This\ method\ inits\ the\ race\ an\ places\ two\ new\ Hamsters\ on\ the\ start\ line\ (2,0)\ and\ (4,0)\n\ \n\ @requires\ territory.getSize.getRows\ >\ 3\n\ @requires\ territory.getSize.getColums\ >\ 1\n\ @requires\ no\ wall\ at\ Location\ 2,0\n\ @requires\ no\ wall\ at\ Location\ 4,0\ \n\ @ensures\ there\ exist\ a\ Hamster\ at\ Location\ 2,0\ \n\ @ensures\ there\ exist\ a\ Hamster\ at\ Location\ 4,0\n
+comment5.params=
+comment5.target=de.unistuttgart.iste.rss.oo.hamstersimulator.external.model.Hamster\ doRace()
+comment5.text=\n\ This\ method\ performs\ the\ race.\ It\ iterates\ over\ the\ set\ of\ hamsters\ and\ calls\ alternating\ the\n\ methode\ doRaceMove\ on\ a\ hamster.\ Scheduling\ is\ round\ robin.\n\ \n\ @return\ the\ winning\ hamster\:\ The\ hamster\ which\ picks\ the\ grain\ at\ the\ end\ of\ the\ territory\ first.\ \n\ \n\ @requires\ \!racers.empty()\n\ @requires\ for\ all\ hamsters\ in\ racers\ mouthEmpty\ \=\ true\n\ @requires\ for\ all\ hamsters\ there\ is\ a\ grain\ in\ the\ direction\ aHamster.getDirection()\n\ @requires\ for\ all\ hamsters\ there\ is\ no\ wall\ inbetween\ aHamster.getLocation()\ and\ the\ grain\n\ @ensures\ there\ exist\ a\ hamster\ where\ aHamster.mouthEmpty()\ is\ false\n
+numComments=6

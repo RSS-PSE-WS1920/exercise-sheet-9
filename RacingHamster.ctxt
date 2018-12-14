@@ -1,0 +1,14 @@
+#BlueJ class context
+comment0.target=RacingHamster
+comment1.params=
+comment1.target=RacingHamster()
+comment2.params=ter\ loc\ dir\ grainsInMouth
+comment2.target=RacingHamster(de.unistuttgart.iste.rss.oo.hamstersimulator.external.model.Territory,\ de.unistuttgart.iste.rss.oo.hamstersimulator.datatypes.Location,\ de.unistuttgart.iste.rss.oo.hamstersimulator.datatypes.Direction,\ int)
+comment3.params=
+comment3.target=void\ pickGrainIfAvailable()
+comment4.params=
+comment4.target=void\ moveIfFrontIsClear()
+comment5.params=
+comment5.target=void\ doRaceMove()
+comment5.text=\n\ The\ race\ move\ is\ a\ special\ move\ every\ hamster\ learns\ in\ racing\ school.\ \n\ It\ contains\ a\ combination\ of\ move\ and\ pick\ grain\ comands.\ The\ actual\ \n\ characteristics\ of\ the\ move\ is\ different\ for\ each\ racing\ hamster\ type.\n
+numComments=6
