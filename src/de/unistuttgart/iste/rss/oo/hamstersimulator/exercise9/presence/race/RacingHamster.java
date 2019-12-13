@@ -11,8 +11,8 @@ public abstract class RacingHamster extends Hamster
         super();
     }
     
-    public RacingHamster(Territory ter, Location loc, Direction dir, int grainsInMouth) {
-        super(ter, loc, dir, grainsInMouth);
+    public RacingHamster(Territory ter, Location loc, Direction dir) {
+        super(ter, loc, dir, 0);
     }
     
     protected void pickGrainIfAvailable(){
